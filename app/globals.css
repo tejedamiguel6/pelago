@@ -1,0 +1,85 @@
+:root {
+  --max-width: 1100px;
+
+  --brand-yellow-rgb: 250, 227, 85;
+  --brand-white-rgb: 255, 255, 255;
+  --brand-black-rgb: 33, 38, 51;
+  --brand-maroon-rgb: 114, 47, 73;
+  --brand-moss-rgb: 77, 101, 37;
+  --brand-cerulean-rgb: 164, 189, 255;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  line-height: 1.5;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--brand-white-rgb));
+  font-family: var(--font-body);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  max-width: calc(1280px + 6rem);
+}
+
+.container {
+  border: 1px solid red;
+  width: 100%;
+  margin: 0 auto;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+/* sm breakpoint */
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+/* md breakpoint */
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+/* lg breakpoint */
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+    padding-right: 3rem;
+    padding-left: 3rem;
+  }
+}
+
+/* xl breakpoint */
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+/* 2xl breakpoint */
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
